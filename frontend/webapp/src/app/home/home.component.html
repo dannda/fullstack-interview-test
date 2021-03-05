@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row p-3">
+
+        <ul class="list-group col-sm-4">
+            <li class="list-group-item" *ngFor="let branch of branches" [ngClass]="{active: branch == selected_branch}">
+                <a href="#" [routerLink]="['branch', branch]" (click)="onSelectBranch(branch)">
+                        {{branch}}
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="col-sm-8">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+</div>
