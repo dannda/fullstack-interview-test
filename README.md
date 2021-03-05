@@ -12,3 +12,11 @@ and
 This will run the development servers for backend (Django) and frontend (Angular).
 
 Open `localhost:4200` in your browser.
+
+It will show the repo's branches, and each branch will show its commits. Clicking a commit will display its details.
+
+### Not implemented
+
+PR requests. 
+
+Updating the repository.
