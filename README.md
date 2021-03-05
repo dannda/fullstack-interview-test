@@ -17,6 +17,6 @@ It will show the repo's branches, and each branch will show its commits. Clickin
 
 ### Not implemented
 
-PR requests. 
+PR list and creation. 
 
 Updating the repository.
