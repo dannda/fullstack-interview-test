@@ -1,0 +1,8 @@
+<div class="card" *ngFor="let commit of commits">
+    <div class="card-body">
+        <a href="#" [routerLink]="['/commit',commit.hexsha]"><h6 class="card-title">{{commit.hexsha}}</h6></a>
+        <p class="card-subtitle mb-2">{{commit.author}}</p>
+        <p class="card-subtitle text-muted">{{commit.authored_datetime}}</p>
+        <p class="card-text">{{commit.message}}</p>
+    </div>
+</div>

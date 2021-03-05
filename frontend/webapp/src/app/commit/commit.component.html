@@ -1,0 +1,15 @@
+<div class="container m-3">
+    <div *ngIf="!loading">
+        <h6>{{commit_hexsha}}</h6>
+        <p>{{commit.author}} ({{commit.author_email}})</p>
+        <p>{{commit.authored_datetime}}</p>
+        <p>{{commit.message}}</p>
+        <div class="card" *ngFor="let file of commit.files">
+            <div class="card-body">
+                <p class="card-title">{{file.filename}}</p>
+                <p class="card-text insertions">Insertions: {{file.changes.insertions}}</p>
+                <p class="card-text deletions">Deletions: {{file.changes.deletions}}</p>
+            </div>
+        </div>
+    </div>
+</div>
