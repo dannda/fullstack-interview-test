@@ -62,7 +62,8 @@ ROOT_URLCONF = 'mysite.urls'
 
 CORS_ORIGIN_WHITELIST =[
     'http://localhost:4200',
-    'http://localhost:8080'
+    'http://localhost:8080',
+    'http://frontend:4200'
 ]
 
 TEMPLATES = [

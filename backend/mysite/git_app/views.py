@@ -5,7 +5,7 @@ from git import Repo, Commit
 from git_app.models import PR
 from git_app.serializers import PRSerializer
 
-repo_dir = '../../'
+repo_dir = '/app/repo'
 repo = Repo(repo_dir)
 assert not repo.bare
 

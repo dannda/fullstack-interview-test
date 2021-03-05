@@ -4,7 +4,8 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class GitApiService {
 
-    urlBasePath = 'http://127.0.0.1:8000/'
+    // urlBasePath = 'backend:8000'
+    urlBasePath = 'http://localhost:8000'
 
     constructor(private http: HttpClient){}
 
