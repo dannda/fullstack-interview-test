@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  backend:
+    image: webapp:1.0.1
+    command: 
+      - python 
+      - /app/repo/backend/mysite/manage.py 
+      - runserver
+      - "0.0.0.0:8000"
+    ports:
+      - "8000:8000"    
+  frontend:
+    image: webapp:1.0.1
+    command:
+      - angular-http-server
+      - -p
+      - "4200"
+      - --path
+      - /app/repo/frontend/dist/webapp
+    ports:
+      - "4200:4200"
